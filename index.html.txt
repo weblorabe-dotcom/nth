@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Weblora - Agence web professionnelle à Liège. Création de sites web modernes, design sur mesure et référencement SEO. Livraison en 48h.">
+    <title>Weblora - Agence Web Professionnelle | Création de Sites Web à Liège</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Meta Tags -->
+    <meta name="theme-color" content="#1E40AF">
+    <meta property="og:title" content="Weblora - Agence Web Professionnelle">
+    <meta property="og:description" content="Création de sites web professionnels. Design moderne, livraison en 48h.">
+    <meta property="og:type" content="website">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#accueil" class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <span class="logo-text">Weblora</span>
+                </a>
+                
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#apropos" class="nav-link">À propos</a></li>
+                    <li><a href="#contact" class="btn-nav-contact">Démarrer un projet</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-gradient"></div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-star"></i>
+                    <span>Votre Agence Web à Liège</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    Transformez votre<br>
+                    <span class="gradient-text">vision digitale</span><br>
+                    en réalité
+                </h1>
+                
+                <p class="hero-description">
+                    Des sites web exceptionnels qui captivent vos visiteurs et transforment votre présence en ligne. 
+                    Design moderne, développement rapide, résultats garantis.
+                </p>
+                
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Démarrer mon projet</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#portfolio" class="btn btn-secondary">
+                        <span>Voir nos réalisations</span>
+                        <i class="fas fa-eye"></i>
+                    </a>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number">48h</div>
+                            <div class="stat-label">Livraison Express</div>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Clients Satisfaits</div>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number">SEO</div>
+                            <div class="stat-label">Optimisé Google</div>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-item">
+                        <div class="stat-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number">24/7</div>
+                            <div class="stat-label">Support Premium</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="hero-card floating">
+                    <div class="hero-card-header">
+                        <div class="hero-card-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="hero-card-body">
+                        <div class="chart-container">
+                            <canvas id="heroChart"></canvas>
+                        </div>
+                        <div class="metrics">
+                            <div class="metric">
+                                <span class="metric-label">Visiteurs</span>
+                                <span class="metric-value">+127%</span>
+                            </div>
+                            <div class="metric">
+                                <span class="metric-label">Conversions</span>
+                                <span class="metric-value">+89%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">
+                    <i class="fas fa-briefcase"></i>
+                    Nos Services
+                </span>
+                <h2 class="section-title">
+                    Des solutions complètes pour<br>
+                    <span class="gradient-text">votre succès digital</span>
+                </h2>
+                <p class="section-description">
+                    Nous transformons vos idées en expériences digitales exceptionnelles
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="service-icon-bg"></div>
+                    </div>
+                    <h3 class="service-title">Création de Sites Web</h3>
+                    <p class="service-description">
+                        Design sur mesure, responsive et moderne. Nous créons des sites qui captivent et convertissent vos visiteurs en clients.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Design professionnel unique</li>
+                        <li><i class="fas fa-check-circle"></i> 100% responsive (mobile, tablette, PC)</li>
+                        <li><i class="fas fa-check-circle"></i> Performance ultra-rapide</li>
+                        <li><i class="fas fa-check-circle"></i> Interface intuitive</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        En savoir plus <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card featured" data-aos="fade-up" data-aos-delay="100">
+                    <div class="featured-badge">
+                        <i class="fas fa-crown"></i> Plus populaire
+                    </div>
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="service-icon-bg"></div>
+                    </div>
+                    <h3 class="service-title">Référencement SEO</h3>
+                    <p class="service-description">
+                        Propulsez votre visibilité sur Google. Stratégie SEO complète pour dominer les résultats de recherche locaux.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Audit SEO complet</li>
+                        <li><i class="fas fa-check-circle"></i> Optimisation technique</li>
+                        <li><i class="fas fa-check-circle"></i> Mots-clés stratégiques</li>
+                        <li><i class="fas fa-check-circle"></i> Référencement local ciblé</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        En savoir plus <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <div class="service-icon-bg"></div>
+                    </div>
+                    <h3 class="service-title">Maintenance & Support</h3>
+                    <p class="service-description">
+                        Votre site toujours au top. Mises à jour, sauvegardes et support technique pour une tranquillité totale.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check-circle"></i> Mises à jour régulières</li>
+                        <li><i class="fas fa-check-circle"></i> Sauvegardes automatiques</li>
+                        <li><i class="fas fa-check-circle"></i> Support prioritaire 24/7</li>
+                        <li><i class="fas fa-check-circle"></i> Modifications illimitées</li>
+                    </ul>
+                    <a href="#contact" class="service-link">
+                        En savoir plus <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">
+                    <i class="fas fa-tag"></i>
+                    Tarifs Transparents
+                </span>
+                <h2 class="section-title">
+                    Des offres adaptées à<br>
+                    <span class="gradient-text">tous vos besoins</span>
+                </h2>
+                <p class="section-description">
+                    Pas de frais cachés. Tout est inclus pour votre réussite.
+                </p>
+            </div>
+            
+            <div class="pricing-grid">
+                <!-- Offre 1 -->
+                <div class="pricing-card" data-aos="fade-up">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Site Vitrine</h3>
+                        <p class="pricing-subtitle">Parfait pour débuter</p>
+                        <div class="pricing-price">
+                            <div class="price-period-top">paiement unique</div>
+                            <div class="price-amount-large">490€</div>
+                        </div>
+                    </div>
+                    
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Design professionnel sur mesure</li>
+                        <li><i class="fas fa-check"></i> Jusqu'à 5 pages</li>
+                        <li><i class="fas fa-check"></i> 100% responsive</li>
+                        <li><i class="fas fa-check"></i> Formulaire de contact</li>
+                        <li><i class="fas fa-check"></i> SEO de base inclus</li>
+                        <li><i class="fas fa-check"></i> Livraison en 48h</li>
+                        <li><i class="fas fa-check"></i> Formation incluse</li>
+                    </ul>
+                    
+                    <a href="#contact" class="btn btn-outline">
+                        <span>Choisir cette offre</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <!-- Offre 2 -->
+                <div class="pricing-card featured" data-aos="fade-up" data-aos-delay="100">
+                    <div class="featured-ribbon">
+                        <i class="fas fa-crown"></i> Recommandé
+                    </div>
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Site Professionnel</h3>
+                        <p class="pricing-subtitle">Le choix des entreprises</p>
+                        <div class="pricing-price">
+                            <div class="price-period-top">paiement unique</div>
+                            <div class="price-amount-large">790€</div>
+                        </div>
+                    </div>
+                    
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Tout du site vitrine +</li>
+                        <li><i class="fas fa-check"></i> Jusqu'à 10 pages</li>
+                        <li><i class="fas fa-check"></i> SEO avancé premium</li>
+                        <li><i class="fas fa-check"></i> Animations & interactions</li>
+                        <li><i class="fas fa-check"></i> Blog intégré</li>
+                        <li><i class="fas fa-check"></i> Google Analytics</li>
+                        <li><i class="fas fa-check"></i> Réseaux sociaux intégrés</li>
+                        <li><i class="fas fa-check"></i> 1 mois support premium</li>
+                    </ul>
+                    
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Choisir cette offre</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <!-- Offre 3 -->
+                <div class="pricing-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pricing-header">
+                        <h3 class="pricing-name">Maintenance</h3>
+                        <p class="pricing-subtitle">Sérénité totale</p>
+                        <div class="pricing-price">
+                            <div class="price-period-top">par mois</div>
+                            <div class="price-amount-large">49€</div>
+                        </div>
+                    </div>
+                    
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Mises à jour mensuelles</li>
+                        <li><i class="fas fa-check"></i> Support prioritaire 24/7</li>
+                        <li><i class="fas fa-check"></i> Sauvegardes quotidiennes</li>
+                        <li><i class="fas fa-check"></i> Modifications illimitées</li>
+                        <li><i class="fas fa-check"></i> Monitoring performance</li>
+                        <li><i class="fas fa-check"></i> Rapports mensuels</li>
+                        <li><i class="fas fa-check"></i> Sans engagement</li>
+                    </ul>
+                    
+                    <a href="#contact" class="btn btn-outline">
+                        <span>Choisir cette offre</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">
+                    <i class="fas fa-images"></i>
+                    Portfolio
+                </span>
+                <h2 class="section-title">
+                    Nos réalisations qui<br>
+                    <span class="gradient-text">font la différence</span>
+                </h2>
+                <p class="section-description">
+                    Des projets qui ont transformé la présence en ligne de nos clients
+                </p>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-aos="zoom-in">
+                    <div class="portfolio-image">
+                        <img src="https://page.gensparksite.com/v1/base64_upload/527649f885bf6feeeb15a6b868de5711" alt="Le Petit Montmartre - Restaurant gastronomique">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3 class="portfolio-title">Le Petit Montmartre</h3>
+                                <p class="portfolio-category">Restaurant Gastronomique</p>
+                                <div class="portfolio-tags">
+                                    <span>Design Premium</span>
+                                    <span>Réservations</span>
+                                    <span>Menu Digital</span>
+                                </div>
+                                <div class="portfolio-stats">
+                                    <div class="stat">
+                                        <i class="fas fa-arrow-up"></i>
+                                        <span>+150% trafic</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="portfolio-image">
+                        <img src="https://page.gensparksite.com/v1/base64_upload/25b106a4e78cc6c59ed1e371937d82be" alt="Chic Parisienne - Boutique Mode">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3 class="portfolio-title">Chic Parisienne</h3>
+                                <p class="portfolio-category">Mode & Lifestyle</p>
+                                <div class="portfolio-tags">
+                                    <span>E-commerce</span>
+                                    <span>Catalogue</span>
+                                    <span>Newsletter</span>
+                                </div>
+                                <div class="portfolio-stats">
+                                    <div class="stat">
+                                        <i class="fas fa-arrow-up"></i>
+                                        <span>+200% ventes</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="portfolio-image">
+                        <img src="https://page.gensparksite.com/v1/base64_upload/a00b97c7e0d5672e0a1ab97cbbe0a274" alt="Atelier Créatif - Studio Design">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3 class="portfolio-title">Atelier Créatif</h3>
+                                <p class="portfolio-category">Design & Création</p>
+                                <div class="portfolio-tags">
+                                    <span>Portfolio</span>
+                                    <span>Animation</span>
+                                    <span>Galerie</span>
+                                </div>
+                                <div class="portfolio-stats">
+                                    <div class="stat">
+                                        <i class="fas fa-arrow-up"></i>
+                                        <span>+180% leads</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="portfolio-image">
+                        <img src="https://page.gensparksite.com/v1/base64_upload/69c8044b7f23ea125bd8cbbe70a9a453" alt="Le Petit Gourmet - Restaurant Lyon">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3 class="portfolio-title">Le Petit Gourmet</h3>
+                                <p class="portfolio-category">Gastronomie Française</p>
+                                <div class="portfolio-tags">
+                                    <span>Chef Étoilé</span>
+                                    <span>Menu Digital</span>
+                                    <span>Réservation</span>
+                                </div>
+                                <div class="portfolio-stats">
+                                    <div class="stat">
+                                        <i class="fas fa-arrow-up"></i>
+                                        <span>+120% réservations</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="portfolio-image">
+                        <img src="https://page.gensparksite.com/v1/base64_upload/ca69a2239f3bf973d756a1e96ba97ec9" alt="Voyage & Évasion - Agence de voyage">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-content">
+                                <h3 class="portfolio-title">Voyage & Évasion</h3>
+                                <p class="portfolio-category">Agence de Voyage</p>
+                                <div class="portfolio-tags">
+                                    <span>Réservation</span>
+                                    <span>Blog</span>
+                                    <span>Destinations</span>
+                                </div>
+                                <div class="portfolio-stats">
+                                    <div class="stat">
+                                        <i class="fas fa-arrow-up"></i>
+                                        <span>+250% bookings</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="portfolio-image">
+                        <div class="portfolio-cta-card">
+                            <i class="fas fa-plus-circle"></i>
+                            <h3>Votre projet ici</h3>
+                            <p>Créons ensemble votre succès digital</p>
+                            <a href="#contact" class="btn btn-primary">
+                                <span>Démarrer maintenant</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="apropos" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <span class="section-badge">
+                        <i class="fas fa-info-circle"></i>
+                        À Propos
+                    </span>
+                    <h2 class="section-title">
+                        Votre partenaire digital<br>
+                        <span class="gradient-text">de confiance</span>
+                    </h2>
+                    <p class="about-description">
+                        Chez <strong>Weblora</strong>, nous ne créons pas seulement des sites web. Nous bâtissons des 
+                        <strong>expériences digitales exceptionnelles</strong> qui transforment votre présence en ligne 
+                        et génèrent des <strong>résultats concrets</strong>.
+                    </p>
+                    <p class="about-description">
+                        Notre passion ? Aider les entreprises locales à <strong>briller sur le web</strong> avec des 
+                        solutions modernes, rapides et efficaces. Pas de jargon technique, pas de promesses irréalistes. 
+                        Juste un <strong>travail de qualité</strong>, livré dans les délais.
+                    </p>
+                    
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Rapidité & Efficacité</h4>
+                                <p>Votre site web livré en <strong>48h maximum</strong></p>
+                            </div>
+                        </div>
+                        
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Qualité Garantie</h4>
+                                <p>Des sites <strong>robustes et performants</strong></p>
+                            </div>
+                        </div>
+                        
+                        <div class="about-feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Résultats Mesurables</h4>
+                                <p>Optimisé pour <strong>convertir vos visiteurs</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Parlons de votre projet</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                
+                <div class="about-visual" data-aos="fade-left">
+                    <div class="visual-card">
+                        <div class="visual-stats">
+                            <div class="visual-stat">
+                                <div class="stat-icon-wrapper">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <div class="stat-number">100+</div>
+                                    <div class="stat-label">Clients Satisfaits</div>
+                                </div>
+                            </div>
+                            
+                            <div class="visual-stat">
+                                <div class="stat-icon-wrapper">
+                                    <i class="fas fa-project-diagram"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <div class="stat-number">150+</div>
+                                    <div class="stat-label">Projets Livrés</div>
+                                </div>
+                            </div>
+                            
+                            <div class="visual-stat">
+                                <div class="stat-icon-wrapper">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <div class="stat-number">5.0</div>
+                                    <div class="stat-label">Note Moyenne</div>
+                                </div>
+                            </div>
+                            
+                            <div class="visual-stat">
+                                <div class="stat-icon-wrapper">
+                                    <i class="fas fa-award"></i>
+                                </div>
+                                <div class="stat-info">
+                                    <div class="stat-number">3 ans</div>
+                                    <div class="stat-label">D'Expérience</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">
+                    <i class="fas fa-envelope"></i>
+                    Contact
+                </span>
+                <h2 class="section-title">
+                    Prêt à démarrer<br>
+                    <span class="gradient-text">votre projet ?</span>
+                </h2>
+                <p class="section-description">
+                    Réponse garantie sous 24h. Discutons de vos ambitions digitales.
+                </p>
+            </div>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Contactez-nous directement</h3>
+                    <p>Choisissez votre méthode préférée pour nous contacter :</p>
+                    
+                    <div class="contact-methods">
+                        <a href="https://wa.me/32488322516" class="contact-method" target="_blank" rel="noopener">
+                            <div class="method-icon whatsapp">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="method-content">
+                                <h4>WhatsApp</h4>
+                                <p>+32 488 32 25 16</p>
+                                <span class="method-badge">Réponse rapide</span>
+                            </div>
+                            <i class="fas fa-arrow-right method-arrow"></i>
+                        </a>
+                        
+                        <a href="mailto:weblorabe@gmail.com" class="contact-method">
+                            <div class="method-icon email">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-content">
+                                <h4>Email</h4>
+                                <p>weblorabe@gmail.com</p>
+                                <span class="method-badge">Réponse sous 24h</span>
+                            </div>
+                            <i class="fas fa-arrow-right method-arrow"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="contact-details">
+                        <div class="detail-item">
+                            <div class="detail-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="detail-content">
+                                <h4>Localisation</h4>
+                                <p>Liège, Belgique</p>
+                            </div>
+                        </div>
+                        
+                        <div class="detail-item">
+                            <div class="detail-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="detail-content">
+                                <h4>Disponibilité</h4>
+                                <p>24h/24 - 7j/7</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper" data-aos="fade-left">
+                    <form id="contactForm" class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="61d9d5f3-ed30-4a3c-84df-9f825b1f9efc">
+                        <input type="hidden" name="subject" value="Nouvelle demande de contact - Weblora">
+                        <input type="hidden" name="from_name" value="Site Weblora">
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nom complet *</label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-user"></i>
+                                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-envelope"></i>
+                                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Téléphone</label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-phone"></i>
+                                    <input type="tel" id="phone" name="phone" placeholder="+32 123 45 67 89">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="company">Entreprise</label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-building"></i>
+                                    <input type="text" id="company" name="company" placeholder="Votre entreprise">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="siteType">Type de site *</label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-laptop"></i>
+                                    <select id="siteType" name="siteType" required>
+                                        <option value="">Sélectionnez une offre</option>
+                                        <option value="Site Vitrine (490€)">Site Vitrine - 490€</option>
+                                        <option value="Site Professionnel (790€)">Site Professionnel - 790€</option>
+                                        <option value="Autre / Devis personnalisé">Autre / Devis personnalisé</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="maintenance">Maintenance</label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-tools"></i>
+                                    <select id="maintenance" name="maintenance">
+                                        <option value="Non merci">Non merci</option>
+                                        <option value="Oui, maintenance (49€/mois)">Oui, maintenance - 49€/mois</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Décrivez votre projet *</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-comment-dots"></i>
+                                <textarea id="message" name="message" rows="5" placeholder="Parlez-nous de votre projet, vos objectifs, vos besoins..." required></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="consent" name="consent" value="oui" required>
+                                <span class="checkbox-custom"></span>
+                                <span>J'accepte d'être contacté concernant ma demande *</span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span>Envoyer ma demande</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                        
+                        <div id="formSuccess" class="form-message success">
+                            <i class="fas fa-check-circle"></i>
+                            <p>Merci ! Votre message a été envoyé. Nous vous répondons sous 24h.</p>
+                        </div>
+                        
+                        <div id="formError" class="form-message error">
+                            <i class="fas fa-exclamation-circle"></i>
+                            <p>Une erreur s'est produite. Veuillez réessayer.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#accueil" class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <span class="logo-text">Weblora</span>
+                    </a>
+                    <p class="footer-description">
+                        Votre partenaire digital de confiance pour transformer votre présence en ligne 
+                        et propulser votre entreprise vers le succès.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://wa.me/32488322516" target="_blank" rel="noopener" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="mailto:weblorabe@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">Création de sites web</a></li>
+                            <li><a href="#services">Référencement SEO</a></li>
+                            <li><a href="#services">Maintenance</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Entreprise</h4>
+                        <ul>
+                            <li><a href="#apropos">À propos</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#services">Tarifs</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Contact</h4>
+                        <ul>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:weblorabe@gmail.com">weblorabe@gmail.com</a>
+                            </li>
+                            <li>
+                                <i class="fab fa-whatsapp"></i>
+                                <a href="https://wa.me/32488322516">+32 488 32 25 16</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Liège, Belgique</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Weblora. Tous droits réservés.</p>
+                <p>Développé avec <i class="fas fa-heart"></i> pour les entreprises locales</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="backToTop" class="back-to-top" aria-label="Retour en haut">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
